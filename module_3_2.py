@@ -6,7 +6,7 @@ def send_email(message, recipient, sender="university.help@gmail.com"):
             or not sender.endswith(('.com', '.ru', '.net'))):   # Проверка условий когда переменные recipient и sender
         # не содержат символ @ и не содержат не содержат в конце строки окончания .com', '.ru', '.net
         print(f'Невозможно отправить письмо с адреса {sender} на адрес {recipient}')
-    elif recipient == sender:   # Проверка условия чтобы отправитеьл и получатель не были одними и теми же
+    elif recipient == sender:   # Проверка условия чтобы отправитель и получатель не были одними и теми же
         print("Нельзя отправить письмо самому себе!")
     elif sender == "university.help@gmail.com":     # Условие проверки удачной отправки письма
         print(f'Письмо успешно отправлено с адреса {sender} на адрес {recipient}')
